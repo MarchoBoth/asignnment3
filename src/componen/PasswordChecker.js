@@ -7,25 +7,31 @@ export const PasswordChecker = () => {
     console.log(event.target.value);
   };
   const handlePasswordCheck = () => {
-    if (password.length < 6) {
+    if (password.length === 0) {
+      alert('You have not entered a password');
+    } else if (password.length < 6) {
       console.error('Password strength: Weak');
     } else if (password.length >= 6 && password.length <= 10) {
       console.log('Password strength: Medium');
     } else if (password.length > 10) {
       console.log('Password strength: Strong');
     }
-    alert(`You submitted: ${password}`); // Original alert for valid passwords
   };
   return (
-    <div>
+    <div className="m-2">
       <label htmlFor="search">Search:</label>
       <input
         id="search"
         type="text"
         onChange={handleChange}
         placeholder="Masukan pasword anda"
+        className="rounded-md border border-black px-3 py-2 m-2"
       />
-      <button onClick={handlePasswordCheck} a>
+      <button
+        className="m-1 p-2 bg-gray-700 text-white rounded-lg "
+        onClick={handlePasswordCheck}
+        a
+      >
         Submit
       </button>
       {password.length < 6 && (

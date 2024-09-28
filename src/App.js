@@ -28,7 +28,7 @@ function App() {
   ];
   return (
     <div className="App">
-      <TugasKoding />
+      {/* <TugasKoding />
       <TugasKoding2 />
       <ExpenseItem />
       <div className="flex justify-center flex-wrap">
@@ -44,7 +44,7 @@ function App() {
       </div>
       <EventonChange />
       <MyForm />
-      <ProductList />
+      <ProductList /> */}
       <Counter />
       <PasswordChecker />
     </div>
