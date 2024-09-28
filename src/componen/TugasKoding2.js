@@ -16,6 +16,7 @@ export const TugasKoding2 = () => {
 
   return (
     <div>
+      <hr />
       <h1>Daftar Pengeluaran</h1>
       <ul>
         {expenses.map((expense, index) => (

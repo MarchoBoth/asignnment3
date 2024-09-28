@@ -5,6 +5,12 @@ import { TugasKoding2 } from './componen/TugasKoding2';
 import gclass from './asset/gclass.jpg';
 import benz from './asset/benz.jpg';
 import { CarCard } from './componen/CarCard';
+import { EventonChange } from './componen/EventonChange';
+import { MyForm } from './componen/MyForm';
+import { ProductList } from './componen/ProductList';
+import { Counter } from './componen/Counter';
+import { PasswordChecker } from './componen/PasswordChecker';
+
 function App() {
   const productList = [
     {
@@ -36,6 +42,11 @@ function App() {
           />
         ))}
       </div>
+      <EventonChange />
+      <MyForm />
+      <ProductList />
+      <Counter />
+      <PasswordChecker />
     </div>
   );
 }
