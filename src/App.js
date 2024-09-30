@@ -10,22 +10,25 @@ import { MyForm } from './componen/MyForm';
 import { ProductList } from './componen/ProductList';
 import { Counter } from './componen/Counter';
 import { PasswordChecker } from './componen/PasswordChecker';
+import { SimpleCard } from './componen/SimpleCard';
+import { ComplexCards } from './componen/ComplexCards';
+import { UserComplex } from './componen/UserComplex';
 
 function App() {
-  const productList = [
-    {
-      title: 'GL Class',
-      description: 'This is our product description GL Class',
-      year: 2020,
-      image: benz,
-    },
-    {
-      title: 'G Class',
-      description: 'This is our product description G Class',
-      year: 2021,
-      image: gclass,
-    },
-  ];
+  // const productList = [
+  //   {
+  //     title: 'GL Class',
+  //     description: 'This is our product description GL Class',
+  //     year: 2020,
+  //     image: benz,
+  //   },
+  //   {
+  //     title: 'G Class',
+  //     description: 'This is our product description G Class',
+  //     year: 2021,
+  //     image: gclass,
+  //   },
+  // ];
   return (
     <div className="App">
       {/* <TugasKoding />
@@ -44,9 +47,12 @@ function App() {
       </div>
       <EventonChange />
       <MyForm />
-      <ProductList /> */}
+      <ProductList />*/}
       <Counter />
       <PasswordChecker />
+      <SimpleCard />
+
+      <UserComplex />
     </div>
   );
 }
